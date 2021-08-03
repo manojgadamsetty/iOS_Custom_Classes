@@ -16,6 +16,7 @@
 		6109A75025D6802700B424C5 /* CustomComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A74F25D6802700B424C5 /* CustomComponentTests.swift */; };
 		6109A75B25D6802700B424C5 /* CustomComponentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A75A25D6802700B424C5 /* CustomComponentUITests.swift */; };
 		6109A76D25D6851C00B424C5 /* LinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A76C25D6851C00B424C5 /* LinkLabel.swift */; };
+		6182681C26B98F5000B127BA /* Toats View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182681B26B98F5000B127BA /* Toats View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6109A75A25D6802700B424C5 /* CustomComponentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponentUITests.swift; sourceTree = "<group>"; };
 		6109A75C25D6802700B424C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6109A76C25D6851C00B424C5 /* LinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkLabel.swift; sourceTree = "<group>"; };
+		6182681B26B98F5000B127BA /* Toats View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Toats View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				6109A76C25D6851C00B424C5 /* LinkLabel.swift */,
+				6182681B26B98F5000B127BA /* Toats View.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				6109A76D25D6851C00B424C5 /* LinkLabel.swift in Sources */,
 				6109A73D25D6802500B424C5 /* ViewController.swift in Sources */,
+				6182681C26B98F5000B127BA /* Toats View.swift in Sources */,
 				6109A73925D6802500B424C5 /* AppDelegate.swift in Sources */,
 				6109A73B25D6802500B424C5 /* SceneDelegate.swift in Sources */,
 			);
