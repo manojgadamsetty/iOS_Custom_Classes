@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6109A73925D6802500B424C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A73825D6802500B424C5 /* AppDelegate.swift */; };
-		6109A73B25D6802500B424C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A73A25D6802500B424C5 /* SceneDelegate.swift */; };
 		6109A73D25D6802500B424C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A73C25D6802500B424C5 /* ViewController.swift */; };
 		6109A74025D6802500B424C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6109A73E25D6802500B424C5 /* Main.storyboard */; };
 		6109A74225D6802700B424C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6109A74125D6802700B424C5 /* Assets.xcassets */; };
@@ -17,6 +16,8 @@
 		6109A75B25D6802700B424C5 /* CustomComponentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A75A25D6802700B424C5 /* CustomComponentUITests.swift */; };
 		6109A76D25D6851C00B424C5 /* LinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A76C25D6851C00B424C5 /* LinkLabel.swift */; };
 		6182681C26B98F5000B127BA /* Toats View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182681B26B98F5000B127BA /* Toats View.swift */; };
+		6182682026B9904E00B127BA /* ToastMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6182681E26B9904E00B127BA /* ToastMessageView.xib */; };
+		6182682126B9904E00B127BA /* ToastMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182681F26B9904E00B127BA /* ToastMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 /* Begin PBXFileReference section */
 		6109A73525D6802500B424C5 /* CustomComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6109A73825D6802500B424C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6109A73A25D6802500B424C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6109A73C25D6802500B424C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6109A73F25D6802500B424C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6109A74125D6802700B424C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		6109A75C25D6802700B424C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6109A76C25D6851C00B424C5 /* LinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkLabel.swift; sourceTree = "<group>"; };
 		6182681B26B98F5000B127BA /* Toats View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Toats View.swift"; sourceTree = "<group>"; };
+		6182681E26B9904E00B127BA /* ToastMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastMessageView.xib; sourceTree = "<group>"; };
+		6182681F26B9904E00B127BA /* ToastMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,6 @@
 			children = (
 				6109A76B25D684F400B424C5 /* Common */,
 				6109A73825D6802500B424C5 /* AppDelegate.swift */,
-				6109A73A25D6802500B424C5 /* SceneDelegate.swift */,
 				6109A73C25D6802500B424C5 /* ViewController.swift */,
 				6109A73E25D6802500B424C5 /* Main.storyboard */,
 				6109A74125D6802700B424C5 /* Assets.xcassets */,
@@ -136,10 +137,20 @@
 		6109A76B25D684F400B424C5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6182681D26B9901B00B127BA /* Toast */,
 				6109A76C25D6851C00B424C5 /* LinkLabel.swift */,
 				6182681B26B98F5000B127BA /* Toats View.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		6182681D26B9901B00B127BA /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				6182681F26B9904E00B127BA /* ToastMessageView.swift */,
+				6182681E26B9904E00B127BA /* ToastMessageView.xib */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6182682026B9904E00B127BA /* ToastMessageView.xib in Resources */,
 				6109A74525D6802700B424C5 /* LaunchScreen.storyboard in Resources */,
 				6109A74225D6802700B424C5 /* Assets.xcassets in Resources */,
 				6109A74025D6802500B424C5 /* Main.storyboard in Resources */,
@@ -272,11 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6182682126B9904E00B127BA /* ToastMessageView.swift in Sources */,
 				6109A76D25D6851C00B424C5 /* LinkLabel.swift in Sources */,
 				6109A73D25D6802500B424C5 /* ViewController.swift in Sources */,
 				6182681C26B98F5000B127BA /* Toats View.swift in Sources */,
 				6109A73925D6802500B424C5 /* AppDelegate.swift in Sources */,
-				6109A73B25D6802500B424C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
