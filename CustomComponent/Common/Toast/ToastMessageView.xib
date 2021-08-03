@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yvB-1W-VSn" customClass="ToastMessageView" customModule="CustomComponent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75p-pZ-tmw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected kids have been checked-out." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VZ-hV-pJQ">
+                            <rect key="frame" x="16" y="8" width="343" height="84"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="3VZ-hV-pJQ" firstAttribute="top" secondItem="75p-pZ-tmw" secondAttribute="top" constant="8" id="9ze-Dj-6O5"/>
+                        <constraint firstItem="3VZ-hV-pJQ" firstAttribute="leading" secondItem="75p-pZ-tmw" secondAttribute="leading" constant="16" id="YO1-jz-wJ1"/>
+                        <constraint firstAttribute="bottom" secondItem="3VZ-hV-pJQ" secondAttribute="bottom" constant="8" id="hAE-mm-72z"/>
+                        <constraint firstAttribute="trailing" secondItem="3VZ-hV-pJQ" secondAttribute="trailing" constant="16" id="whc-3w-Uhz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="d43-Mz-LMe"/>
+            <constraints>
+                <constraint firstItem="75p-pZ-tmw" firstAttribute="leading" secondItem="d43-Mz-LMe" secondAttribute="leading" id="2zZ-6w-oxM"/>
+                <constraint firstItem="d43-Mz-LMe" firstAttribute="trailing" secondItem="75p-pZ-tmw" secondAttribute="trailing" id="UfY-xS-D4U"/>
+                <constraint firstItem="d43-Mz-LMe" firstAttribute="bottom" secondItem="75p-pZ-tmw" secondAttribute="bottom" id="WQ9-dP-IZa"/>
+                <constraint firstItem="75p-pZ-tmw" firstAttribute="top" secondItem="d43-Mz-LMe" secondAttribute="top" id="yWc-uw-7Tv"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="75p-pZ-tmw" id="yyz-ky-unX"/>
+                <outlet property="toastLabel" destination="3VZ-hV-pJQ" id="hNe-Iz-Tax"/>
+            </connections>
+            <point key="canvasLocation" x="-239.19999999999999" y="214.09295352323841"/>
+        </view>
+    </objects>
+</document>
